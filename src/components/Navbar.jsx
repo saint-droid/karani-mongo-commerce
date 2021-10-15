@@ -48,7 +48,8 @@ border:none;
 outline:none;
 padding:8px;
 ${mobile({
-    width:"50px"
+    width:"50px",
+    padding:"4px"
 })}
 `;
 const Center = styled.div`
@@ -58,7 +59,9 @@ text-align:center;
 const Logo = styled.h1`
 font-weight:bold;
 ${mobile({
-    fontSize:"12px"
+    fontSize:"13px",
+    marginLeft:"5px",
+    fontWeight:"900"
 })}
 `;
 
@@ -70,7 +73,7 @@ align-items:center;
 justify-content:flex-end;
 ${mobile({
     flex:"2",
-    justifyContent:"center"
+    justifyContent:"flex-end"
 })}
 `;
 const MenuItem = styled.div`
@@ -81,7 +84,7 @@ margin-left:25px;
 ${mobile({
     fontSize:"11px",
     
-    marginLeft:"10px"
+    marginLeft:"2px"
 })}
 `;
 const MainMenuItem = styled.div`
@@ -114,8 +117,8 @@ const Navbar = () => {
                     </Logo>
                 </Center>
                 <Right>
-                    <MenuItem>Register now</MenuItem>
-                    <MenuItem>Sign in</MenuItem>
+                    <MenuItem>Register </MenuItem>
+                    <MenuItem>Join</MenuItem>
                     <MenuItem>
                     <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined/>

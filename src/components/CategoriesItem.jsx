@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components' 
 import { mobile } from '../Responsive';
 
 const Container = styled.div`
 flex:1;
 margin:3px;
-height:70vh;
+height:100vh;
 
 position:relative;
 `;
@@ -14,7 +15,7 @@ width:100%;
 height:100%;
 object-fit:cover;
 ${mobile({
-    height:"20vh"
+    height:"60vh"
 })}
 `;
 const Info = styled.div`
@@ -43,11 +44,13 @@ font-weight:600;
 const CategoriesItem = ({item}) => {
     return (
         <Container>
+            <Link to={`/products/${item.cat}`}>
            <Image src={item.img}/>
            <Info>
                <Title>{item.title}</Title>
                <Button>shop now</Button>
            </Info>
+           </Link>
         </Container>
     )
 }

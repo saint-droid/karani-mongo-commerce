@@ -28,7 +28,7 @@ position:absolute;
 top:0;
 left: ${props=> props.direction === "left" && "10px"};
 right: ${props=> props.direction === "right" && "10px"};
-opacity:0.5;
+opacity:0.9;
 bottom:0;
 margin:auto;
 cursor:pointer;
@@ -61,9 +61,9 @@ const Image = styled.img`
 height:80%;
 `;
 const Title = styled.h1`
-
-font-size:70px;
-
+font-weight:900;
+font-size:100px;
+margin-bottom:20px;
 `;
 const Description  = styled.p`
 margin:50px 0;
@@ -106,9 +106,10 @@ const [slideIndex, setSlideIndex] = useState(0)
                 </ImageCont>
                 <InfoCont>
                     <Title>{item.title} </Title>
-                    <Description>
+                   {/**  <Description>
                     {item.desc}
                     </Description>
+                    */}
                     <Button>Shop now</Button>
                 </InfoCont>
                 </Slide>

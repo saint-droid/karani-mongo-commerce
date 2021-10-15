@@ -1,12 +1,13 @@
 import slider from "./assets/slider1.jpg"
 import cat from "./assets/hoodie1.jpg"
+import slider1 from "./assets/homeslide.jpg"
 
 
 export const sliderItems = [
     {
         id:1,
         img: slider,
-        title:"jersey world Hoodies",
+        title:"New and unique collection available now",
         desc:"we sell authentic jerseys hoodies and caps for sports lovers",
         bg:'f5fafd'
     },
@@ -30,16 +31,19 @@ export const categories =[
     id:1,
     img: cat,
     title:"hoodies",
+    cat:"men",
 },
 {
     id:2,
     img: cat,
     title:"jerseys",
+    cat:"women",
 },
 {
     id:3,
     img: cat,
     title:"caps",
+    cat:"unisex",
 }
 ]
 export const popularProduct =[

@@ -7,6 +7,8 @@ import Categories from '../components/Categories'
 import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
+import Testimonials from '../components/Testimonials'
+import ProductTitle from '../components/ProductTitle'
 
 const Home = () => {
     return (
@@ -15,7 +17,9 @@ const Home = () => {
             <Navbar/>
             <Slider/>
             <Categories/>
+            <ProductTitle/>
             <Products/>
+            <Testimonials/>
             <Newsletter/>
             <Footer/>
         </div>
